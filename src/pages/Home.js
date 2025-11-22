@@ -96,7 +96,7 @@ const Home = () => {
 
   const fetchProducts = async () => {
     try {
-      const response = await fetch("http://localhost:8080/products", {
+      const response = await fetch("https://login-signup-mern-authentication-backend.onrender.com/products", {
         headers: {
           Authorization: localStorage.getItem("token")
         }
